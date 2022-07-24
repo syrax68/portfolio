@@ -39,6 +39,14 @@ body{
   }
 }
 
+.menu-icon-center{
+  display: flex;
+  gap: 10px;
+  svg{
+    margin-top: 3px;
+  }
+}
+
 .main{
   height: 90vh;
   display: flex;

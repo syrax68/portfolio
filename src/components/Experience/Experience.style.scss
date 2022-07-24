@@ -37,13 +37,14 @@
     }
     .description{
         max-width: 70%;
+        white-space: pre-line;
     }
     img{
         position: absolute;
-        top: 4rem;
+        top: 3rem;
         right: 2rem;
-        width: 250px;
-        height: 250px;
+        width: 200px;
+        height: 200px;
         z-index: -1;
         opacity: 0.3;
     }

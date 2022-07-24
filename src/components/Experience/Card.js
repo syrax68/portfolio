@@ -2,6 +2,7 @@ import "./Experience.style.scss";
 import { useState } from "react";
 import { initialTabs as tabs } from "./skills";
 import { motion, AnimatePresence } from "framer-motion";
+import { GoPrimitiveDot } from "react-icons/go";
 
 export default function Card() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
@@ -39,9 +40,11 @@ export default function Card() {
                 <div className="section-info">
                     <h2>{selectedTab.post}</h2>
                     <span>{selectedTab.delay}</span>
-                    <p className="description">
-                        {selectedTab.description}
-                    </p>
+                    {selectedTab.descriptions.map((description)=>
+                        <p className="description menu-icon-center">
+                            <GoPrimitiveDot /> {description}
+                        </p>
+                    )}
                     <img src={selectedTab.icon} alt={selectedTab.label} width={100} height={100}/>
 
                 </div>
