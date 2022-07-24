@@ -1,0 +1,35 @@
+@import '../../style/color.scss';
+
+nav{
+    padding: 0px 30px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    .text-logo{
+        font-family: 'Nova Mono', monospace;
+        border-left: 20px solid hsl(192deg 100% 64%);
+        padding-left: 10px;
+        color: $white;
+        text-decoration: none;
+    }
+    .left-menu{
+        display: flex;
+        gap: 40px;
+        justify-content: flex-end;
+        a{
+            color: $white;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 3px;
+            font-family: 'Nova Mono', monospace;
+            span{
+                color: $blueLight;
+                line-height: 0;
+            }
+            &:hover{
+                color: $blueLight;
+            }
+        }
+    }
+}

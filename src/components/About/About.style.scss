@@ -1,0 +1,64 @@
+@import '../../style/color.scss';
+
+.about{
+    font-family: 'Nova Mono', monospace;
+    max-width: 900px;
+    margin: 0px auto;
+    padding: 100px 0px;
+    .icon{
+        color: $blueLight;
+        line-height: 0;
+    }
+    .bloc-info{
+        display: flex;
+        gap: 10px;
+        .description{
+            display: flex;
+            align-items: center;
+        }
+        img{
+            width: 100%;
+            filter: grayscale(100%) contrast(1);
+            border-radius: 20px;
+            aspect-ratio: auto 500 / 500;
+            &:hover{
+                filter: none;
+                cursor: pointer;
+            }
+        }
+    }
+    .bloc-image{
+        max-width: 40%;
+    }
+    .stack{
+        color: $blueLight;
+        text-transform: uppercase;
+    }
+    .skills{
+        margin-top: 5rem;
+        p{
+            text-align: center;
+        }
+        .list-skill{
+            margin-top: 3rem;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            li{
+                font-size: 3rem;
+                display: flex;
+                flex-flow: column;
+                justify-content: center;
+                svg{
+                    margin: auto;
+                }
+                span{
+                    margin-top: 5px;
+                    font-size: 0.3em;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
