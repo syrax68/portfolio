@@ -14,7 +14,10 @@ export const Experience = () => {
             </div>
             <div>
                 <div className="worked">
-                    
+                    <h2>FULLSTACK DEVELOPER <span>@ Compagnie Optédif</span></h2>
+                    <p className="description">
+                        Redesign and development of new features of the Optédif.com site on NextJS, Express and MongoDB.
+                    </p>
                 </div>
                 <CardExperience />
                 {/* <div className="worked">
