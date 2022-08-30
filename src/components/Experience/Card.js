@@ -8,7 +8,7 @@ export default function Card() {
   const [selectedTab, setSelectedTab] = useState(tabs[0]);
 
   return (
-    <div className="window">
+    <div className="experience">
       <nav>
         <ul>
           {tabs.map((item) => (
