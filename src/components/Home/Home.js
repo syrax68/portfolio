@@ -1,6 +1,8 @@
 import React from "react";
 import { About } from "../About/About";
+import { Contact } from "../Contact/Contact";
 import { Experience } from "../Experience/Experience";
+import { Project } from "../Project/Project";
 import './Home.style.scss';
 
 export const Home = () => {
@@ -16,6 +18,8 @@ export const Home = () => {
             </section>
             <About />
             <Experience />
+            <Project />
+            <Contact />
         </>
     )
 }

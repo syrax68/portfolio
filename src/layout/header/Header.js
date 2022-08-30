@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import './Header.style.scss';
 import { BsInfoCircleFill } from 'react-icons/bs';
@@ -6,8 +6,24 @@ import { AiFillExperiment } from 'react-icons/ai';
 import { MdOutlineWork, MdContactSupport } from 'react-icons/md';
 
 const Header = () => {
+    const [header, setHeader] = useState("header")
+    const listenScrollEvent = (event) => {
+        if (window.scrollY < 73) {
+            return setHeader("header")
+        } else if (window.scrollY > 70) {
+            return setHeader("header2")
+        } 
+    }
+    
+    useEffect(() => {
+        window.addEventListener('scroll', listenScrollEvent);
+    
+        return () =>
+            window.removeEventListener('scroll', listenScrollEvent);
+    }, []);
+
     return (
-        <nav>
+        <nav className={header}>
             <div>
                 <h1>
                     <Link to="/" className="text-logo">SYRAX</Link>

@@ -1,10 +1,18 @@
 @import '../../style/color.scss';
 
+.header2{
+    background-color: #282c34;
+    z-index: 2;
+}
+
 nav{
-    padding: 0px 30px;
     display: flex;
+    background-color: transparent;
     justify-content: space-between;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    position: fixed;
+    padding: 0px 30px;
+    width: -webkit-fill-available;
     .text-logo{
         font-family: 'Nova Mono', monospace;
         border-left: 20px solid hsl(192deg 100% 64%);
