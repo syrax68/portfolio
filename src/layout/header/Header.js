@@ -8,9 +8,9 @@ import { MdOutlineWork, MdContactSupport } from 'react-icons/md';
 const Header = () => {
     const [header, setHeader] = useState("header")
     const listenScrollEvent = (event) => {
-        if (window.scrollY < 73) {
+        if (window.scrollY < 53) {
             return setHeader("header")
-        } else if (window.scrollY > 70) {
+        } else if (window.scrollY > 50) {
             return setHeader("header2")
         } 
     }
